@@ -58,3 +58,36 @@
     overflow: hidden;
     transition: max-height .25s cubic-bezier(.5, 0, .1, 1);
 }
+
+
+/* 반응형 */
+@media screen and (max-width: 1189px) {
+
+    .faq-card .faq-answer, .faq-card .faq-question {
+        font-size: 20px;
+    }
+
+    .faq-card .faq-list {
+        width: 90%;
+        margin: 1.5em auto;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .faq-card {
+        padding: 50px 0;
+    }
+
+    .faq-card .faq-list {
+        width: 100%;
+    }
+
+    .faq-card .faq-answer, .faq-card .faq-question {
+        font-size: 18px;
+    }
+
+    .faq-card .cta-form{
+        padding: 0 5%;
+    }
+}
