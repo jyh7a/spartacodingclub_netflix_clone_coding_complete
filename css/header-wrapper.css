@@ -3,7 +3,7 @@
     height: 100px;
     position: relative;
     z-index: 10;
-		max-width: 1920px;
+    max-width: 1920px;
     margin: auto;
 }
 
@@ -50,7 +50,6 @@
     transform: translateY(-50%);
     content: '\e898';
     font-family: nf-icon;
-    font-size: 6px;
     pointer-events: none;
     color: white;
 }
@@ -68,7 +67,6 @@
     line-height: 18px;
     background: rgba(0, 0, 0, .4);
     color: #fff;
-    font-size: 0.875rem;
 }
 
 .authLinks {
@@ -79,4 +77,49 @@
     padding: 7px 17px;
     color: white;
     border-radius: 3px;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1189px) {
+    .header-wrapper {
+        height: auto;
+    }
+
+    .header {
+        padding-top: 8px;
+        margin: 0 45px;
+    }
+
+    .nfLogo {
+        width: 108px;
+        height: 36px;
+    }
+
+    .lang-selector {
+        padding: 8px 22px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        margin: 0 16px;
+    }
+
+    .lang-selector {
+        padding: 4px 22px;
+    }
+
+    .authLinks {
+        padding: 0px 5.5px;
+        font-size: 14px;
+    }
+
+    .nfLogo {
+        width: 89px;
+        height: auto;
+    }
+
+    #lang-selector-wrapper {
+        margin-right: 12px;
+    }
 }
