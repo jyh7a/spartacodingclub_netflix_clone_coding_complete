@@ -49,3 +49,35 @@
     font-size: 14px;
     color: #0071eb;
 }
+
+
+/* 반응형 */
+@media screen and (max-width: 1189px) {
+
+    .downloadAndWatch .story-card-animation-container {
+        margin: -8% 0 0 0;
+    }
+
+    .downloadAndWatch .story-card-animation-image img {
+        height: 4em;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .downloadAndWatch .stroy-card-animation {
+        padding: 4px 10px;
+    }
+
+    .downloadAndWatch .stroy-card-animation::after {
+        height: 2.95em;
+    }
+
+    .downloadAndWatch .stroy-card-animation {
+        padding: 4px 10px;
+    }
+
+    .downloadAndWatch .story-card-animation-image img {
+        height: 3em;
+    }
+}
