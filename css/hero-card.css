@@ -1,0 +1,38 @@
+.hero-card .story-card-background {
+    z-index: 0;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: linear-gradient(to top, rgba(0, 0, 0, .9) 0, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, .9) 100%),
+    url(../assets/img/card-01-hero-card.jpg) center;
+    background-size: cover;
+}
+
+.hero-card .story-card-text {
+    max-width: 950px;
+    padding: 75px 0;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.hero-card .story-card-text .title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: normal;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-card .story-card-text .subtitle {
+    margin: 1rem auto;
+    font-size: 26px;
+    line-height: normal;
+    color: white;
+    max-width: 800px;
+    margin: 16px auto;
+}
