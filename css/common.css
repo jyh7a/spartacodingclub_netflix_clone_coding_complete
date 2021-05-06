@@ -116,6 +116,14 @@ h2, h3, h4, h5 {
     z-index: 2;
 }
 
+.animation-card.flipped .animation-card-container {
+    flex-direction: row-reverse;
+}
+
+.animation-card.flipped .animation-card-container .story-card-text {
+    padding: 0 0 0 3rem;
+}
+
 /* animation-card END */
 
 /* email form */
