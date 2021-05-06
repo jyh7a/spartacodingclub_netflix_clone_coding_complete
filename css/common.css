@@ -37,3 +37,140 @@ input[type=submit] {
 h2, h3, h4, h5 {
     margin: .75em 0 .25em;
 }
+
+/* story-card */
+
+.story-card {
+    position: relative;
+    border-bottom: 8px solid #222;
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+    padding: 70px 45px;
+}
+
+.story-card-cta .inputError {
+    /*text-align: left;*/
+    text-align: initial;
+    display: none;
+    color: #ffa00a;
+    margin-bottom: -6px;
+    padding: 6px 3px;
+    font-size: 15px;
+}
+
+/* story-card END */
+
+/* email form */
+
+.cta-form {
+    padding-top: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-form .cta-form-title {
+    font-size: 19px;
+    padding: 0 48px 20px;
+    color: white;
+    margin: 0 auto;
+}
+
+.cta-form .story-card-cta {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-form .input-responsive {
+    width: 500px;
+    height: 70px;
+}
+
+.cta-form .input-placement {
+    position: relative;
+    height: 100%;
+}
+
+.cta-form .input-responsive input[type="email"] {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px 10px 0;
+    border: solid 1px #8c8c8c;
+    border-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #000;
+    font-size: 1rem;
+}
+
+.cta-form .input-responsive input[type="email"].error {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #ffa00a;
+}
+
+.cta-form .input-responsive input[type="email"]:focus {
+    border-color: #0071eb;
+    outline: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.cta-form .input-responsive input[type="email"]:focus + .placeLabel {
+    top: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    transform: translateY(0px);
+}
+
+.cta-form .input-responsive input[type="email"].hasText + .placeLabel {
+    top: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    transform: translateY(0px);
+}
+
+.cta-form .input-responsive .placeLabel {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transition: font .1s ease, top .1s ease, transform .1s ease, -webkit-transform .1s ease, -moz-transform .1s ease, -o-transform .1s ease;
+    transform: translateY(-50%);
+    color: #8c8c8c;
+    font-size: 16px;
+}
+
+.cta-form .input-responsive input[type="email"].error {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #ffa00a;
+}
+
+.cta-form .story-card-cta button[type="submit"] {
+    background: #f40612;
+    box-shadow: 0 1px 0 #00000073;
+    border: none;
+    width: 208px;
+    color: #fff;
+    background-color: #e50914;
+    cursor: pointer;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.cta-form .story-card-cta button[type="submit"] .fa-chevron-right {
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+/* email form end */
