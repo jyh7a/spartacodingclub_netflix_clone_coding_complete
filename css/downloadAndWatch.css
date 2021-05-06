@@ -1,0 +1,51 @@
+.downloadAndWatch .story-card-animation-container {
+    margin: -8% 0 -4% -15%;
+    min-height: 100px;
+    width: 100%;
+}
+
+.downloadAndWatch .stroy-card-animation {
+    padding: .5em .75em;
+    border: 2px solid rgba(255, 255, 255, .25);
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    width: 60%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background: #000;
+    border-radius: .75em;
+    min-width: 15em;
+    box-shadow: 0 0 2em 0 #000;
+    box-sizing: content-box;
+}
+
+.downloadAndWatch .stroy-card-animation::after {
+    height: 3.75em;
+    width: 3em;
+    background: url('../assets/img/card-03-download.gif') center center no-repeat;
+    background-size: 100%;
+    content: '';
+}
+
+.downloadAndWatch .story-card-animation-image {
+    margin: 0 1em 0 0;
+}
+
+.downloadAndWatch .story-card-animation-image img {
+    height: 5em;
+}
+
+.downloadAndWatch .story-card-animation-text {
+    flex-grow: 1;
+}
+
+.downloadAndWatch .story-card-animation-text .text-0 {
+    font-weight: 700;
+}
+
+.downloadAndWatch .story-card-animation-text .text-1 {
+    font-size: 14px;
+    color: #0071eb;
+}
