@@ -1,0 +1,82 @@
+.header-wrapper {
+    padding-top: 20px;
+    height: 100px;
+    position: relative;
+    z-index: 10;
+		max-width: 1920px;
+    margin: auto;
+}
+
+.header {
+    margin: 0 56px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nfLogo {
+    width: 167px;
+    height: 49px;
+    fill: #e50914;
+}
+
+.right-menu {
+    display: flex;
+    height: fit-content;
+}
+
+#lang-selector-wrapper {
+    margin-right: 32px;
+    position: relative;
+}
+
+#lang-selector-wrapper::before {
+    font-size: .75rem;
+    left: .5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '\e896';
+    font-family: nf-icon;
+    pointer-events: none;
+    color: white;
+}
+
+#lang-selector-wrapper::after {
+    font-size: .75rem;
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '\e898';
+    font-family: nf-icon;
+    font-size: 6px;
+    pointer-events: none;
+    color: white;
+}
+
+.lang-selector {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 8px 28px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    line-height: 18px;
+    background: rgba(0, 0, 0, .4);
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.authLinks {
+    background: #e50914;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 7px 17px;
+    color: white;
+    border-radius: 3px;
+}
