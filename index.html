@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="kr">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
@@ -8,11 +8,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Netflix Clone Coding</title>
 
+  <!-- 구글 "fontawesome cdn" 검색 -->
+  <!-- https://fontawesome.com/how-to-use/customizing-wordpress/snippets/setup-cdn-webfont -->
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
   <!-- style -->
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
+<body style="height: 5000px">
 
 <div class="wrap">
   <div class="header-wrapper">
@@ -30,7 +37,7 @@
       <div class="right-menu">
         <div id="lang-selector-wrapper">
           <select class="lang-selector">
-            <option class="lang" value="kr">한국어</option>
+            <option class="lang" value="ko">한국어</option>
             <option class="lang" value="en">English</option>
           </select>
         </div>
@@ -38,7 +45,28 @@
       </div>
     </div>
   </div>
-  <div class="story-cards"></div>
+  <div class="story-cards">
+    <div class="story-card hero-card">
+      <div class="story-card-background"></div>
+      <div class="story-card-text">
+        <h1 class="title lang">영화, TV 프로그램을 무제한으로.</h1>
+        <h2 class="subtitle lang">다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.</h2>
+        <form class="cta-form" action="https://www.netflix.com/signup/registration?locale=ko-KR">
+          <h3 class="cta-form-title lang">시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</h3>
+          <div class="story-card-cta">
+            <div class="input-responsive">
+              <div class="input-placement">
+                <input class="email-input" id="email-input" type="email">
+                <label class="placeLabel lang" for="email-input">이메일 주소</label>
+              </div>
+              <div class="inputError lang">이메일 주소를 입력해 주세요.</div>
+            </div>
+            <button class="lang" type="submit">시작하기<i class="fal fa-chevron-right"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 
 </body>
