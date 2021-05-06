@@ -78,11 +78,8 @@ h2, h3, h4, h5 {
 
 /* story-card END */
 
-/* animation-card */
 
-.animation-card .story-card-img-container {
-    width: 48%;
-}
+/* animation-card */
 
 .animation-card .story-card-text {
     width: 52%;
@@ -104,6 +101,18 @@ h2, h3, h4, h5 {
     align-items: center;
 }
 
+.animation-card.flipped .animation-card-container {
+    flex-direction: row-reverse;
+}
+
+.animation-card.flipped .animation-card-container .story-card-text {
+    padding: 0 0 0 3rem;
+}
+
+.animation-card .story-card-img-container {
+    width: 48%;
+}
+
 .animation-card.watchOnDevice .story-card-video,
 .animation-card.watchOnTv .story-card-video {
     width: 100%;
@@ -116,15 +125,8 @@ h2, h3, h4, h5 {
     z-index: 2;
 }
 
-.animation-card.flipped .animation-card-container {
-    flex-direction: row-reverse;
-}
-
-.animation-card.flipped .animation-card-container .story-card-text {
-    padding: 0 0 0 3rem;
-}
-
 /* animation-card END */
+
 
 /* email form */
 
@@ -239,3 +241,72 @@ h2, h3, h4, h5 {
 }
 
 /* email form end */
+
+
+/* 반응형 */
+@media screen and (max-width: 1189px) {
+    /* cta-form */
+    .cta-form {
+        padding-top: 0;
+    }
+
+    .cta-form .cta-form-title {
+        max-width: 450px;
+        font-size: 23px;
+        box-sizing: content-box;
+        padding: 0 68px 0;
+    }
+
+    .cta-form .story-card-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-form .input-responsive {
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .cta-form .story-card-cta button[type="submit"] {
+        width: 111px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .cta-form .story-card-cta button[type="submit"] .fa-chevron-right {
+        font-size: 11px;
+        padding-left: 8px;
+    }
+
+    .cta-form .input-responsive input[type="email"] {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .story-card.hero-card {
+        padding: 50px 5%;
+    }
+
+    .cta-form .cta-form-title {
+        font-size: 18px;
+        padding: 0 14px;
+    }
+
+    .cta-form .input-responsive {
+        width: 100%;
+    }
+
+    .cta-form .input-responsive input[type="email"] {
+        height: 48px;
+    }
+
+    .cta-form .input-responsive .placeLabel {
+        font-size: 14px;
+    }
+
+    .cta-form .input-responsive input[type="email"]:focus + .placeLabel {
+        font-size: 11px;
+        font-weight: 400;
+    }
+}
