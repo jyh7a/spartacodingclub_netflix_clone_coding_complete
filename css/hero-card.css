@@ -40,3 +40,34 @@
 
 
 /* 반응형 추가 영역 */
+@media screen and (max-width: 1189px) {
+    .hero-card .story-card-background {
+        top: -70px;
+    }
+
+    .hero-card .story-card-text .title {
+        font-size: 50px;
+        margin: 0 19px;
+    }
+
+    .hero-card .story-card-text .subtitle {
+        margin: 16px 19px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero-card .story-card-text .title {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .hero-card .story-card-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .hero-card .story-card-text .subtitle {
+        font-size: 18px;
+        margin: 16px 0;
+    }
+}

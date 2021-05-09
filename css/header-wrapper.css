@@ -80,3 +80,46 @@
 }
 
 /* 반응형 추가 영역 */
+@media screen and (max-width: 1189px) {
+    .header-wrapper {
+        height: auto;
+    }
+
+    .header {
+        padding-top: 8px;
+        margin: 0 45px;
+    }
+
+    .nfLogo {
+        width: 108px;
+        height: 36px;
+    }
+
+    .lang-selector {
+        padding: 8px 22px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        margin: 0 16px;
+    }
+
+    .lang-selector {
+        padding: 4px 22px;
+    }
+
+    .authLinks {
+        padding: 0px 5.5px;
+        font-size: 14px;
+    }
+
+    .nfLogo {
+        width: 89px;
+        height: auto;
+    }
+
+    #lang-selector-wrapper {
+        margin-right: 12px;
+    }
+}

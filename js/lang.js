@@ -9,7 +9,7 @@ $('.lang-selector').on('change', function () {
         $.ajax({
             type: 'GET',
             dataType: 'json',
-            url: '/NETFLIX_CLONE_COMPLETE/assets/lang/en.json',
+            url: '/spartacodingclub_netflix_clone_coding_complete/assets/lang/en.json',
             success: function (data) {
                 langData = data;
                 changeLanguage(langData);
@@ -55,7 +55,7 @@ $(function () {
         $.ajax({
             type: 'GET',
             dataType: 'json',
-            url: '/NETFLIX_CLONE_COMPLETE/assets/lang/en.json',
+            url: '/spartacodingclub_netflix_clone_coding_complete/assets/lang/en.json',
             success: function (data) {
                 langData = data;
                 changeLanguage(langData);

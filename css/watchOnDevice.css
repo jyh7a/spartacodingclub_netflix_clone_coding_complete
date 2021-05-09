@@ -19,3 +19,8 @@
 
 
 /* 반응형 추가 영역 */
+@media screen and (max-width: 1189px) {
+    .watchOnDevice .story-card-animation-container {
+        margin: -5% 0 0 0;
+    }
+}
