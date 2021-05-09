@@ -11,10 +11,6 @@
     flex-wrap: wrap;
 }
 
-.footer-links > li {
-    margin-left: 0;
-}
-
 .site-footer-wrapper {
     min-width: 190px;
     width: 100%;
@@ -99,13 +95,10 @@
     margin-top: 4px;
 }
 
-.stie-footer {
+.site-footer {
     width: 90%;
     margin: 0 auto;
 }
 
-@media screen and (max-width: 767px) {
-    .footer-link-item {
-        width: 50%;
-    }
-}
+
+/* 반응형 추가 영역 */

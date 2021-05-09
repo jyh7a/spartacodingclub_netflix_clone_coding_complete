@@ -38,6 +38,7 @@ h2, h3, h4, h5 {
     margin: .75em 0 .25em;
 }
 
+
 /* setCookiePopupLayer */
 .setCookiePopupLayer {
     display: none;
@@ -58,6 +59,7 @@ h2, h3, h4, h5 {
     cursor: pointer;
 }
 /* setCookiePopupLayer END*/
+
 
 /* story-card */
 .story-card-subtitle,
@@ -84,16 +86,6 @@ h2, h3, h4, h5 {
 .story-card .story-card-subtitle {
     font-size: 1.625rem;
     font-weight: 400;
-}
-
-.story-card-cta .inputError {
-    /*text-align: left;*/
-    text-align: initial;
-    display: none;
-    color: #ffa00a;
-    margin-bottom: -6px;
-    padding: 6px 3px;
-    font-size: 15px;
 }
 /* story-card END */
 
@@ -227,13 +219,6 @@ h2, h3, h4, h5 {
     font-size: 16px;
 }
 
-.cta-form .input-responsive input[type="email"].error {
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 2px solid #ffa00a;
-}
-
 .cta-form .story-card-cta button[type="submit"] {
     background: #f40612;
     box-shadow: 0 1px 0 #00000073;
@@ -255,132 +240,17 @@ h2, h3, h4, h5 {
     font-size: 25px;
     padding-left: 15px;
 }
+
+.cta-form .inputError {
+    /*text-align: left;*/
+    text-align: initial;
+    display: none;
+    color: #ffa00a;
+    margin-bottom: -6px;
+    padding: 6px 3px;
+    font-size: 15px;
+}
 /* email form end */
 
 
-/* 반응형 */
-@media screen and (max-width: 1189px) {
-    /* cta-form */
-    .cta-form {
-        padding-top: 0;
-    }
-
-    .cta-form .cta-form-title {
-        max-width: 450px;
-        font-size: 23px;
-        box-sizing: content-box;
-        padding: 0 68px 0;
-    }
-
-    .cta-form .story-card-cta {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cta-form .input-responsive {
-        height: auto;
-        margin: 10px auto;
-    }
-
-    .cta-form .story-card-cta button[type="submit"] {
-        width: 111px;
-        height: 40px;
-        font-size: 16px;
-    }
-
-    .cta-form .story-card-cta button[type="submit"] .fa-chevron-right {
-        font-size: 11px;
-        padding-left: 8px;
-    }
-
-    .cta-form .input-responsive input[type="email"] {
-        height: 60px;
-    }
-
-    /* animation */
-    .animation-card-container {
-        flex-direction: column;
-    }
-
-    .animation-card .story-card-text {
-        width: 100%;
-        padding: 0;
-        text-align: center;
-        z-index: 3;
-    }
-
-    .animation-card .story-card-img-container {
-        width: 100%;
-        max-width: 600px;
-        margin-top: 1em;
-        background: transparent;
-    }
-
-    .animation-card .story-card-animation-container {
-        margin: -10% 0 0 0;
-    }
-
-    .animation-card.flipped .animation-card-container {
-        flex-direction: column;
-    }
-
-    /* .story-card */
-    .story-card .story-card-title {
-        font-size: 40px;
-    }
-
-    .story-card .story-card-subtitle {
-        margin: 15px 0 5px;
-        font-size: 20px;
-    }
-
-    .story-card-subtitle, .story-card-text {
-        font-size: 1.25rem;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .story-card.hero-card {
-        padding: 50px 5%;
-    }
-
-    .story-card {
-        padding: 50px 16px;
-    }
-
-    .story-card .story-card-title {
-        font-size: 26px;
-    }
-
-    .story-card .story-card-subtitle {
-        font-size: 18px;
-        margin-top: 14px;
-    }
-
-    .cta-form .cta-form-title {
-        font-size: 18px;
-        padding: 0 14px;
-    }
-
-    .cta-form .input-responsive {
-        width: 100%;
-    }
-
-    .cta-form .input-responsive input[type="email"] {
-        height: 48px;
-    }
-
-    .cta-form .input-responsive .placeLabel {
-        font-size: 14px;
-    }
-
-    .cta-form .input-responsive input[type="email"]:focus + .placeLabel {
-        font-size: 11px;
-        font-weight: 400;
-    }
-
-    .animation-card.flipped .animation-card-container .story-card-text {
-        padding: 0;
-    }
-}
-/* 반응형 END */
+/* 반응형 추가 영역 */

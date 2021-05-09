@@ -38,8 +38,6 @@ const emailRegeX = function ($self, email, $inputError) {
         $inputError.hide();
         $self.removeClass('error');
     }
-
-
 }
 
 $('.faq-question').on('click', function () {

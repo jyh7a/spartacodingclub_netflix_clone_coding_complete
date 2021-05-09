@@ -8,289 +8,36 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Netflix Clone Coding</title>
   
-  <!-- 구글 "fontawesome cdn" 검색 -->
-  <!-- https://fontawesome.com/how-to-use/customizing-wordpress/snippets/setup-cdn-webfont -->
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- fontawesome 추가 영역 -->
   
-  <!-- style -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- stylesheet 추가 영역 -->
   
-  <!-- favicon -->
-  <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+  <!-- favicon 추가 영역 -->
 </head>
 
 <body>
 
 <div class="wrap">
-  <div class="setCookiePopupLayer">
-    <img src="./assets/img/cookieSetting.png" alt="쿠키팝업 레이어">
-  </div>
-  <div class="header-wrapper">
-    <div class="header">
-      <div class="nfLogo">
-        <svg viewBox="0 0 111 30" class="svg-icon svg-icon-netflix-logo" focusable="false">
-          <g id="netflix-logo">
-            <path
-              d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"
-              id="Fill-14">
-            </path>
-          </g>
-        </svg>
-      </div>
-      <div class="right-menu">
-        <div id="lang-selector-wrapper">
-          <select class="lang-selector">
-            <option class="lang" value="ko">한국어</option>
-            <option class="lang" value="en">English</option>
-          </select>
-        </div>
-        <a class="authLinks lang" href="https://www.netflix.com/kr/login">로그인</a>
-      </div>
-    </div>
-  </div>
-  <div class="story-cards">
-    <div class="story-card hero-card">
-      <div class="story-card-background"></div>
-      <div class="story-card-text">
-        <h1 class="title lang">영화, TV 프로그램을 무제한으로.</h1>
-        <h2 class="subtitle lang">다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.</h2>
-        <form class="cta-form" action="https://www.netflix.com/signup/registration?locale=ko-KR">
-          <h3 class="cta-form-title lang">시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</h3>
-          <div class="story-card-cta">
-            <div class="input-responsive">
-              <div class="input-placement">
-                <input class="email-input" id="email-input" type="email">
-                <label class="placeLabel lang" for="email-input">이메일 주소</label>
-              </div>
-              <div class="inputError lang">이메일 주소를 입력해 주세요.</div>
-            </div>
-            <button class="lang" type="submit">시작하기<i class="fal fa-chevron-right"></i></button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="story-card animation-card watchOnTv">
-      <div class="animation-card-container">
-        <div class="story-card-text">
-          <h1 class="story-card-title lang">TV로 즐기세요.</h1>
-          <h2 class="story-card-subtitle lang">스마트 TV, PlayStation, Xbox, Chromecast, Apple TV, 블루레이 플레이어 등 다양한 디바이스에서
-            시청하세요. </h2>
-        </div>
-        <div class="story-card-img-container">
-          <div class="story-card-animation-container">
-            <img class="story-card-img" src="./assets/img/card-02-tv.png">
-            <div class="stroy-card-animation">
-              <video class="story-card-video" autoplay="" playsinline="" muted="" loop="">
-                <source src="./assets/img/card-02-tv-video.m4v" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="story-card animation-card downloadAndWatch flipped">
-      <div class="animation-card-container">
-        <div class="story-card-text">
-          <h1 class="story-card-title lang">즐겨 보는 콘텐츠를 저장해 오프라인으로 시청하세요.</h1>
-          <h2 class="story-card-subtitle lang">간편하게 저장하고 빈틈없이 즐겨보세요.</h2>
-        </div>
-        <div class="story-card-img-container">
-          <div class="story-card-animation-container">
-            <img class="story-card-img" src="./assets/img/card-03-mobile.jpg">
-            <div class="stroy-card-animation">
-              <div class="story-card-animation-image">
-                <img alt="" src="./assets/img/card-03-boxshot.png">
-              </div>
-              <div class="story-card-animation-text">
-                <div class="text-0 lang" data-uia="">기묘한 이야기</div>
-                <div id="" class="text-1 lang" data-uia="">저장 중...</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="story-card animation-card watchOnDevice">
-      <div class="animation-card-container">
-        <div class="story-card-text">
-          <h1 class="story-card-title lang">다양한 디바이스에서 시청하세요.</h1>
-          <h2 class="story-card-subtitle lang">각종 영화와 TV 프로그램을 스마트폰, 태블릿, 노트북, TV에서 무제한으로 스트리밍하세요. 추가 요금이 전혀 없습니다.</h2>
-        </div>
-        <div class="story-card-img-container">
-          <div class="story-card-animation-container">
-            <img class="story-card-img" src="./assets/img/card-04-devices.png">
-            <div class="story-card-animation">
-              <video class="story-card-video" autoplay="" playsinline="" muted="" loop="">
-                <source src="./assets/img/card-04-video.m4v" type="video/mp4">
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="story-card faq-card">
-      <div class="story-card-text">
-        <h1 class="story-card-title lang">자주 묻는 질문</h1>
-        <ul class="faq-list">
-          <li class="faq-list-item">
-            <button class="faq-question lang">넷플릭스란 무엇인가요?
-              <i class="fal fa-plus"></i>
-            </button>
-            <div class="faq-answer closed">
-              <span class="lang">넷플릭스는 각종 수상 경력에 빛나는 TV 프로그램, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍
-                서비스입니다. <br><br>저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 TV 프로그램과 영화가
-                제공됩니다.</span>
-            </div>
-          </li>
-          <li class="faq-list-item">
-            <button class="faq-question lang">넷플릭스 요금은 얼마인가요?
-              <i class="fal fa-plus"></i>
-            </button>
-            <div class="faq-answer closed">
-              <span class="lang">스마트폰, 태블릿, 스마트 TV, 노트북, 스트리밍 디바이스 등 다양한 디바이스에서 월정액 요금 하나로 넷플릭스를 시청하세요. 멤버십 요금은 월 9,500원부터
-                14,500원까지 다양합니다. 추가 비용이나 약정이 없습니다.</span>
-            </div>
-          </li>
-          <li class="faq-list-item">
-            <button class="faq-question lang">어디에서 시청할 수 있나요?
-              <i class="fal fa-plus"></i>
-            </button>
-            <div class="faq-answer closed">
-              <span class="lang">다양한 디바이스에서 언제 어디서나 시청할 수 있습니다. 넷플릭스 계정으로 로그인하면 PC에서 netflix.com을 통해 바로 시청할 수 있으며, 인터넷이 연결되어 있고
-                넷플릭스 앱을 지원하는 디바이스(스마트 TV, 스마트폰, 태블릿, 스트리밍 미디어 플레이어, 게임 콘솔 등)에서도 언제든지 시청할 수 있습니다. <br><br>iOS, Android,
-                Windows 10용 앱에서는 좋아하는 프로그램을 저장할 수도 있습니다. 저장 기능을 이용해 이동 중이나 인터넷에 연결할 수 없는 곳에서도 시청하세요. 넷플릭스는 어디서든
-                함께니까요.</span>
-            </div>
-          </li>
-          <li class="faq-list-item">
-            <button class="faq-question lang">멤버십을 해지하려면 어떻게 하나요?
-              <i class="fal fa-plus"></i>
-            </button>
-            <div class="faq-answer closed">
-              <span class="lang">넷플릭스는 부담 없이 간편합니다. 성가신 계약도, 약정도 없으니까요. 멤버십 해지도 온라인에서 클릭 두 번이면 완료할 수 있습니다. 해지 수수료도 없으니 원할 때 언제든 계정을
-                시작하거나 종료하세요.</span>
-            </div>
-          </li>
-          <li class="faq-list-item">
-            <button class="faq-question lang">넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?
-              <i class="fal fa-plus"></i>
-            </button>
-            <div class="faq-answer closed">
-              <span class="lang">넷플릭스는 장편 영화, 다큐멘터리, TV 프로그램, 애니메이션, 각종 상을 수상한 넷플릭스 오리지널 등 수많은 콘텐츠를 확보하고 있습니다. 마음에 드는 콘텐츠를 원하는 시간에
-                원하는 만큼 시청하세요.</span>
-            </div>
-          </li>
-        </ul>
-        <form class="cta-form" action="https://www.netflix.com/signup/registration?locale=ko-KR">
-          <h3 class="cta-form-title lang">시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</h3>
-          <div class="story-card-cta">
-            <div class="input-responsive">
-              <div class="input-placement">
-                <input class="email-input" id="email-input_faq" type="email">
-                <label class="placeLabel lang" for="email-input_faq">이메일 주소</label>
-              </div>
-              <div class="inputError lang">이메일 주소를 입력해 주세요.</div>
-            </div>
-            <button class="lang" type="submit">시작하기<i class="fal fa-chevron-right lang"></i></button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="story-card footer-card">
-      <div class="site-footer-wrapper">
-        <div class="stie-footer">
-          <p class="footer-top lang">질문이 있으신가요? 문의 전화: &nbsp;<a class="footer-top-a"
-                                                                href="tel:00-308-321-0058">00-308-321-0058</a>
-          </p>
-          <ul class="footer-links">
-            <li class="footer-link-item">
-              <a href="https://help.netflix.com/ko/node/412" class="footer-link"><span class="lang">자주 묻는 질문</span></a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://help.netflix.com/ko/" class="footer-link"><span class="lang">고객 센터</span></a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://www.netflix.com/kr/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount"
-                 class="footer-link"><span class="lang">계정</span></a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://media.netflix.com/ko/" class="footer-link"><span class="lang">미디어 센터</span></a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://ir.netflix.net/ir-overview/profile/default.aspx" class="footer-link"><span class="lang">투자
-                정보(IR)</span></a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://jobs.netflix.com/" class="footer-link"><span class="lang">입사 정보</span></a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://devices.netflix.com/ko/" class="footer-link"><span
-                class="lang">Netflix 지원 디바이스</span></a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://help.netflix.com/legal/termsofuse" class="footer-link"><span
-                class="lang">이용 약관</span></a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://help.netflix.com/legal/privacy" class="footer-link"><span class="lang">개인 정보</span></a>
-            </li>
-            <li class="footer-link-item setCookiePopup">
-              <a href="javascript:void(0)" class="footer-link"><span class="lang">쿠키 설정</span></a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://help.netflix.com/legal/corpinfo" class="footer-link"><span class="lang">회사 정보</span></a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://help.netflix.com/ko/contactus" class="footer-link"><span class="lang">문의하기</span></a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://fast.com/ko/" class="footer-link"><span class="lang">속도 테스트</span></a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://help.netflix.com/legal/notices" class="footer-link"><span class="lang">법적 고지</span></a>
-            </li>
-            <li class="footer-link-item">
-              <a href="https://www.netflix.com/kr/browse/genre/839338" class="footer-link"><span class="lang">Netflix
-                    오리지널</span></a>
-            </li>
-          </ul>
-          <div id="footer-lang-selector-wrapper">
-            <select class="lang-selector">
-              <option class="lang" value="ko">한국어</option>
-              <option class="lang" value="en">English</option>
-            </select>
-          </div>
-          <p class="footer-country lang">Netflix 대한민국</p>
-          <div class="copy-text">
-            <div class="copy-text-block lang">넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 00-308-321-0058</div>
-            <div class="copy-text-block lang">대표: 레지널드 숀 톰프슨</div>
-            <div class="copy-text-block lang">이메일 주소: korea@netflix.com</div>
-            <div class="copy-text-block lang">주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161</div>
-            <div class="copy-text-block lang">클라우드 호스팅: Amazon Web Services Inc.</div>
-            <div class="copy-text-block" data-uia=""><a class="lang"
-                                                        href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2018300016930200431&amp;pageUnit=10&amp;searchCnd=bup_nm&amp;searchKrwd=%EB%84%B7%ED%94%8C%EB%A6%AD%EC%8A%A4&amp;pageIndex=1">공정거래위원회
-              웹사이트 링크</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- setCookiePopupLayer 추가 영역 -->
+  
+  <!-- header-wrapper 추가 영역 -->
+  
+  <!-- hero-card 추가 영역 -->
+  
+  <!-- watchOnTv 추가 영역 -->
+  
+  <!-- downloadAndWatch 추가 영역 -->
+  
+  <!-- watchOnDevice 추가 영역 -->
+  
+  <!--  faq-card 추가 영역 -->
+  
+  <!-- footer-card 추가 영역 -->
+  
 </div>
 
-<!-- jquery cnd 검색 -->
-<!-- https://code.jquery.com/ -->
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+<!-- jquery 추가 영역 -->
 
-<!-- 다국어 처리 -->
-<script src="js/lang.js"></script>
-
-<!-- common -->
-<script src="js/common.js"></script>
 </body>
 
 </html>
