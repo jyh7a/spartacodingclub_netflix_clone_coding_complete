@@ -38,8 +38,28 @@ h2, h3, h4, h5 {
     margin: .75em 0 .25em;
 }
 
-/* story-card */
+/* setCookiePopupLayer */
+.setCookiePopupLayer {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+}
 
+.setCookiePopupLayer img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    cursor: pointer;
+}
+/* setCookiePopupLayer END*/
+
+/* story-card */
 .story-card-subtitle,
 .story-card-text {
     font-size: 1.625rem;
@@ -75,12 +95,10 @@ h2, h3, h4, h5 {
     padding: 6px 3px;
     font-size: 15px;
 }
-
 /* story-card END */
 
 
 /* animation-card */
-
 .animation-card .story-card-text {
     width: 52%;
     padding: 0 3rem 0 0;
@@ -124,12 +142,10 @@ h2, h3, h4, h5 {
     position: relative;
     z-index: 2;
 }
-
 /* animation-card END */
 
 
 /* email form */
-
 .cta-form {
     padding-top: 14px;
     text-align: center;
@@ -239,7 +255,6 @@ h2, h3, h4, h5 {
     font-size: 25px;
     padding-left: 15px;
 }
-
 /* email form end */
 
 
@@ -368,3 +383,4 @@ h2, h3, h4, h5 {
         padding: 0;
     }
 }
+/* 반응형 END */
