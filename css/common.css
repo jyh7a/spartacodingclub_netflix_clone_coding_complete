@@ -2,6 +2,40 @@
     background-color: #000;
 }
 
+/* for disclaimer */
+.disclaimer {
+    color: white;
+    background: #e50914;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 10px;
+    position: fixed;
+    z-index: 9999;
+    font-size: calc(0.5vw + 10px);
+}
+
+.disclaimer-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: calc(5px + 1vw);
+}
+
+.disclaimer-content .comment-2{
+    font-size: calc(0.2vw + 10px);;
+}
+
+.disclaimer-content p + p{
+    margin-top: calc(8px + 0.1vw);
+}
+
+.disclaimer .button {
+    cursor: pointer;
+}
+/* for disclaimer  END */
+
 body * {
     word-break: keep-all;
     box-sizing: border-box;

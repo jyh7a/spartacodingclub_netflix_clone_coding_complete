@@ -15,6 +15,9 @@ $('.lang-selector').on('change', function () {
                 changeLanguage(langData);
                 langSelectorSync(region);
                 changeHtmlLang(region);
+
+                // for disclaimer
+                $('.disclaimer').fadeIn();
             }
         })
     }

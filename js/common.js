@@ -70,3 +70,8 @@ $('.setCookiePopupLayer img').on('click', function () {
     $('.setCookiePopupLayer').fadeOut();
     $('body').css('overflow', 'auto')
 })
+
+// for disclaimer
+$('.disclaimer .fa-window-close').on('click', function(){
+    $('.disclaimer').fadeOut();
+})
