@@ -1,3 +1,11 @@
+# Disclaimer 
+```
+This webpage is only a copy of the the official Netflix homepage and was made for educational purposes
+The copyrights of images, videos, and fonts used on the homepage are owned by Netflix.
+
+Thanks to the GitHub Trust & Safety team for their advice.
+```
+
 # 넷플릭스 클론코딩 완성본 주소
 [https://jyh7a.github.io/spartacodingclub_netflix_clone_coding_complete/index.html](https://jyh7a.github.io/spartacodingclub_netflix_clone_coding_complete/index.html)
 
